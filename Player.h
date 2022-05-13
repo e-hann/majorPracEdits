@@ -2,20 +2,21 @@
 #define PLAYER_H
 #include <iostream>
 #include <string>
-#include <cmath>
+//#include "Person.h"
 //#include "Room.h"
 //#include "Game.h"
 
 using namespace std;
 
 class Player {
-    protected:
+    public:
         string Location;
 
         //accusation array using: 1Character, 2Weapon, 3Room
         string* Accusation;
+        
 
-    public:
+    //public:
         // default constructor
         Player();
 
@@ -34,6 +35,6 @@ class Player {
         string* getAccusation();
 
         // destructor
-        //s~Player();
+        ~Player();
 };
 #endif

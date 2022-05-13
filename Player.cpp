@@ -5,12 +5,12 @@
  
  // default constructor
 Player::Player(){
-    this-> Location = "";
+    this-> Location = "emptyL";
     Accusation = new string[3];
 
     //empty accusation array
     for (int i = 0; i < 3; i++){
-        Accusation[i] = "";
+        Accusation[i] = "emptyA";
     }
 
 }
@@ -27,8 +27,7 @@ string* Player::getAccusation(){
 }
 
 // destructor
-/*
+
 Player::~Player(){
     
 }
-*/
